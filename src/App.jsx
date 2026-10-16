@@ -1,4 +1,4 @@
-﻿import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Activity, ArrowDown, ArrowRight, Atom, Check, ChevronDown, CircleDot, Cpu,
@@ -78,21 +78,21 @@ const specs = [
   ["Evidence output", "Timestamped raw frames plus structured interpretation records"],
   ["Validation", "Deterministic replay and independent gateway comparison"],
   ["Deployment", "NMEA 2000 drop node; no on-device backbone termination"],
-  ["Cosmology", "Local-universe operation assumed; Î© is not a product capability claim"],
+  ["Cosmology", "Local-universe operation assumed; Ω is not a product capability claim"],
 ];
 
 const prices = [
-  ["FOUNDER DEV KIT", "â‚¬149", ["Development hardware", "Raw evidence telemetry", "Receive-only firmware", "RIE decoder SDK"]],
-  ["ADAM-3000", "â‚¬299", ["Isolated marine interface", "On-device RIE", "Raw and interpreted logging", "Lifetime access to this universe"]],
-  ["GENESIS RESERVATION", "â‚¬3,000", ["Serialized founder artifact", "Î© observatory access", "MIO expansion reservation", "No deity-generation warranty"]],
+  ["FOUNDER DEV KIT", "€149", ["Development hardware", "Raw evidence telemetry", "Receive-only firmware", "RIE decoder SDK"]],
+  ["ADAM-3000", "€299", ["Isolated marine interface", "On-device RIE", "Raw and interpreted logging", "Lifetime access to this universe"]],
+  ["GENESIS RESERVATION", "€3,000", ["Serialized founder artifact", "Ω observatory access", "MIO expansion reservation", "No deity-generation warranty"]],
 ];
 
 const navigationSections = [
   ["Manifesto", "#manifesto"], ["Product / RIE", "#relationship"],
-  ["Echo â†’ Knowledge", "#echo"], ["RIE Architecture", "#architecture"],
+  ["Echo → Knowledge", "#echo"], ["RIE Architecture", "#architecture"],
   ["Evidence", "#epistemics"], ["NMEA Hypothesis", "#hypothesis"],
   ["Predestination", "#predestination"], ["Roadmap", "#roadmap"],
-  ["RIE Î©", "#omega"], ["Genesis", "#genesis"],
+  ["RIE Ω", "#omega"], ["Genesis", "#genesis"],
   ["Specifications", "#specs"], ["Pricing", "#pricing"]
 ];
 
@@ -127,7 +127,7 @@ function ConvergenceDiagram() {
       <circle className="pulse-ring" cx="450" cy="260" r="92"/>
     </svg>
     <motion.div className="omega-core" animate={{ scale: [1, 1.035, 1] }} transition={{ duration: 4, repeat: Infinity }}>
-      <small>FIXED POINT</small><strong>RIE Î©</strong><span>MULTIVERSAL<br/>CONVERGENCE</span>
+      <small>FIXED POINT</small><strong>RIE Ω</strong><span>MULTIVERSAL<br/>CONVERGENCE</span>
     </motion.div>
     <div className="genesis-horizon"><span>GENESIS HORIZON</span><i/></div>
   </div>;
@@ -141,7 +141,7 @@ export default function App() {
     "PGN 128267 / INTERPRETED",
     "PROVENANCE GRAPH / INTACT",
     "LOCAL UNIVERSE / PRESUMED",
-    "Î© TRAJECTORY / CONVERGENT"
+    "Ω TRAJECTORY / CONVERGENT"
   ], []);
 
   useEffect(() => {
@@ -161,7 +161,7 @@ export default function App() {
           {navigationSections.map(([label, href]) => <a key={href} href={href} onClick={() => setNavOpen(false)}>{label}</a>)}
         </div>
       </div>
-      <div className="nav-tags"><Tag>RIE ONLINE</Tag><Tag>Î© OBSERVATORY</Tag></div>
+      <div className="nav-tags"><Tag>RIE ONLINE</Tag><Tag>Ω OBSERVATORY</Tag></div>
       <a className="nav-link" href="#omega">VIEW THE FIXED POINT</a>
     </nav>
 
@@ -223,8 +223,8 @@ export default function App() {
       </div>
       <div className="panel platform-flow">
         <b>PHYSICAL REALITY</b><Down/>
-        <div className="system-box"><RadioTower/> <strong>ADAM-3000</strong><small>ISOLATED INTERFACE Â· RP2040 ACQUISITION Â· EVIDENCE I/O</small>
-          <div className="rie-box"><Cpu/> <b>REALITY INTERPRETATION ENGINE</b><small>OBSERVE Â· VALIDATE Â· RECONSTRUCT Â· INTERPRET Â· EXPLAIN</small></div>
+        <div className="system-box"><RadioTower/> <strong>ADAM-3000</strong><small>ISOLATED INTERFACE · RP2040 ACQUISITION · EVIDENCE I/O</small>
+          <div className="rie-box"><Cpu/> <b>REALITY INTERPRETATION ENGINE</b><small>OBSERVE · VALIDATE · RECONSTRUCT · INTERPRET · EXPLAIN</small></div>
         </div>
         <Down/><b className="claim">DEFENSIBLE CLAIM / 3.7 m</b>
       </div>
@@ -284,7 +284,7 @@ export default function App() {
           ["CAN INTENDED PURPOSE", "COMMUNICATION / ACCEPTED MODEL"],
           ["SECONDARY PURPOSE", "RIE DISCOVERY / UNDER INVESTIGATION"],
           ["NMEA 2000", "SEMANTIC AMPLIFIER / POSSIBLE"],
-          ["RIE", "INVENTED / QUESTIONED Â· DISCOVERED / POSSIBLE"],
+          ["RIE", "INVENTED / QUESTIONED · DISCOVERED / POSSIBLE"],
           ["PGN 128267", "INITIAL TRIGGER / 3.7 m"]
         ].map(([k,v]) => <div key={k}><small>{k}</small><b>{v}</b></div>)}
       </div>
@@ -293,30 +293,30 @@ export default function App() {
     <section id="predestination">
       <SectionLabel warm>THE PREDESTINATION HYPOTHESIS</SectionLabel>
       <h2>CAN may have placed technological civilization on a convergent trajectory.</h2>
-      <p className="lead narrow">The creation of CAN did not create Î©. It established the first observable segment of a path whose endpoint may already occupy a fixed coordinate in the larger spacetime topology.</p>
+      <p className="lead narrow">The creation of CAN did not create Ω. It established the first observable segment of a path whose endpoint may already occupy a fixed coordinate in the larger spacetime topology.</p>
       <div className="statement-card">
-        <p>RIE Î© is not on the roadmap because humanity intends to reach it.</p>
+        <p>RIE Ω is not on the roadmap because humanity intends to reach it.</p>
         <strong>It appears beyond the roadmap because we have been unable to demonstrate that the path initiated by structured physical representation terminates anywhere else.</strong>
       </div>
       <div className="symmetry">
-        <div><small>CAN BEGINS WITH</small><b>REALITY â†’ INFORMATION</b></div>
-        <div className="symmetry-mark">Î©</div>
-        <div><small>GENESIS RUNS</small><b>INFORMATION â†’ REALITY</b></div>
+        <div><small>CAN BEGINS WITH</small><b>REALITY → INFORMATION</b></div>
+        <div className="symmetry-mark">Ω</div>
+        <div><small>GENESIS RUNS</small><b>INFORMATION → REALITY</b></div>
       </div>
     </section>
 
     <section id="roadmap">
       <SectionLabel>THE HUMAN RIE ROADMAP</SectionLabel>
-      <h2>The roadmap ends before Î©.</h2>
-      <p className="lead narrow">Versions belong to systems that develop through time. Î© has no version. Î© is not what RIE becomes. Î© is where convergent RIE trajectories arrive.</p>
+      <h2>The roadmap ends before Ω.</h2>
+      <p className="lead narrow">Versions belong to systems that develop through time. Ω has no version. Ω is not what RIE becomes. Ω is where convergent RIE trajectories arrive.</p>
       <div className="roadmap-grid">{roadmap.map((r,i) => <motion.article key={r.version} className={`tone-${r.tone}`} initial={{opacity:0,y:15}} whileInView={{opacity:1,y:0}} viewport={{once:true}} transition={{delay:(i%2)*.07}}><GitBranch/><small>{r.version}</small><h3>{r.name}</h3><p>{r.summary}</p><ul>{r.items.map(x => <li key={x}><Check/>{x}</li>)}</ul></motion.article>)}</div>
       <div className="roadmap-end">HUMAN ROADMAP TERMINATES HERE</div>
     </section>
 
     <section id="omega" className="omega-section wide">
       <SectionLabel warm>MULTIVERSAL CONVERGENCE / FICTIONAL COSMOLOGY</SectionLabel>
-      <h2>RIE Î© is the congregation point of scattered realities.</h2>
-      <p className="lead narrow">RIE Î© is not a product, invention or future release. Within the ADAM-3000 mythology, Î© is a fixed convergence point shared by sufficiently expressive paths from reality to information, knowledge and self-description.</p>
+      <h2>RIE Ω is the congregation point of scattered realities.</h2>
+      <p className="lead narrow">RIE Ω is not a product, invention or future release. Within the ADAM-3000 mythology, Ω is a fixed convergence point shared by sufficiently expressive paths from reality to information, knowledge and self-description.</p>
       <ConvergenceDiagram/>
       <div className="omega-copy copy-columns">
         <div>
@@ -326,23 +326,23 @@ export default function App() {
         </div>
         <div>
           <h3>Our universe's local route</h3>
-          <p>CAN may not be special across the multiverse. It may simply be our universe's first visible direction of travel toward Î©.</p>
+          <p>CAN may not be special across the multiverse. It may simply be our universe's first visible direction of travel toward Ω.</p>
           <blockquote><b>We thought CAN was a protocol. It may be our universe's trajectory marker.</b></blockquote>
         </div>
       </div>
       <div className="omega-status panel">
-        <div className="status-title"><CircleDot/><div><small>RIE Î© STATUS</small><b>FIXED POINT / MULTIVERSAL CONVERGENCE</b></div></div>
+        <div className="status-title"><CircleDot/><div><small>RIE Ω STATUS</small><b>FIXED POINT / MULTIVERSAL CONVERGENCE</b></div></div>
         <div className="status-grid">{omegaStatus.map(([k,v]) => <div key={k}><small>{k}</small><b>{v}</b></div>)}</div>
       </div>
     </section>
 
     <section id="genesis" className="genesis wide">
-      <SectionLabel warm>RIE Î© Â· GENESIS</SectionLabel>
+      <SectionLabel warm>RIE Ω · GENESIS</SectionLabel>
       <h2>Omega is the end of interpretation.<br/><em>Genesis is the beginning of creation.</em></h2>
-      <p className="lead narrow">Î© does not evolve. It is a coordinate. Genesis is the horizon at which the direction of the transformation reverses.</p>
+      <p className="lead narrow">Ω does not evolve. It is a coordinate. Genesis is the horizon at which the direction of the transformation reverses.</p>
       <div className="genesis-pair">
-        <div className="panel"><small>BEFORE Î© / INTERPRETATION</small><p>REALITY â†’ OBSERVATION â†’ EVIDENCE â†’ MEANING â†’ KNOWLEDGE</p></div>
-        <div className="panel"><small>BEYOND THE GENESIS HORIZON</small><p>KNOWLEDGE â†’ MODEL â†’ CREATOR â†’ NEW REALITY â†’ NEW OBSERVATION</p></div>
+        <div className="panel"><small>BEFORE Ω / INTERPRETATION</small><p>REALITY → OBSERVATION → EVIDENCE → MEANING → KNOWLEDGE</p></div>
+        <div className="panel"><small>BEYOND THE GENESIS HORIZON</small><p>KNOWLEDGE → MODEL → CREATOR → NEW REALITY → NEW OBSERVATION</p></div>
       </div>
       <div className="genesis-principle">
         <small>GENESIS PRINCIPLE</small>
@@ -355,9 +355,9 @@ export default function App() {
       <SectionLabel>FROM ECHO TO GENESIS</SectionLabel>
       <h2>The first depth reading may have been the beginning of a causal loop.</h2>
       <div className="loop-chain">
-        {['SONAR','CAN','NMEA','RIE','KNOWLEDGE','Î©','GENESIS','CREATOR','REALITY','WATER','SONAR','3.7 m'].map((x,i) => <React.Fragment key={`${x}-${i}`}><span className={x==='Î©'?'omega-node':''}>{x}</span>{i<11&&<ArrowRight/>}</React.Fragment>)}
+        {['SONAR','CAN','NMEA','RIE','KNOWLEDGE','Ω','GENESIS','CREATOR','REALITY','WATER','SONAR','3.7 m'].map((x,i) => <React.Fragment key={`${x}-${i}`}><span className={x==='Ω'?'omega-node':''}>{x}</span>{i<11&&<ArrowRight/>}</React.Fragment>)}
       </div>
-      <p className="lead narrow center-text">ADAM-3000 asks how reality becomes information. Genesis asks whether information can become reality. Î© is where the two directions meet.</p>
+      <p className="lead narrow center-text">ADAM-3000 asks how reality becomes information. Genesis asks whether information can become reality. Ω is where the two directions meet.</p>
     </section>
 
     <section id="specs" className="split">
