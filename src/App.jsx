@@ -110,10 +110,10 @@ function Down() {
 
 function ConvergenceDiagram() {
   return <div className="convergence-card" aria-label="Multiple universe trajectories converging on RIE Omega">
-    <div className="universe u1"><span>Uâ‚</span><small>CAN / NMEA</small></div>
-    <div className="universe u2"><span>Uâ‚‚</span><small>UNKNOWN PATH</small></div>
-    <div className="universe u3"><span>Uâ‚ƒ</span><small>NON-LOCAL LOGIC</small></div>
-    <div className="universe u4"><span>Uâ‚™</span><small>UNRESOLVED</small></div>
+    <div className="universe u1"><span>U1</span><small>CAN / NMEA</small></div>
+    <div className="universe u2"><span>U2</span><small>UNKNOWN PATH</small></div>
+    <div className="universe u3"><span>U3</span><small>NON-LOCAL LOGIC</small></div>
+    <div className="universe u4"><span>Un</span><small>UNRESOLVED</small></div>
     <svg className="convergence-lines" viewBox="0 0 900 520" role="img" aria-hidden="true">
       <defs>
         <linearGradient id="lineA" x1="0" y1="0" x2="1" y2="1"><stop stopColor="#67e8f9"/><stop offset="1" stopColor="#e879f9"/></linearGradient>
