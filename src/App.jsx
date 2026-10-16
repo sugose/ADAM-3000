@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
-  Activity, ArrowDown, ArrowRight, Atom, Check, CircleDot, Cpu,
+  Activity, ArrowDown, ArrowRight, Atom, Check, ChevronDown, CircleDot, Cpu,
   Database, GitBranch, Orbit, RadioTower, ShieldCheck, Sparkles,
   Waves, Zap
 } from "lucide-react";
@@ -87,6 +87,15 @@ const prices = [
   ["GENESIS RESERVATION", "€3,000", ["Serialized founder artifact", "Ω observatory access", "MIO expansion reservation", "No deity-generation warranty"]],
 ];
 
+const navigationSections = [
+  ["Manifesto", "#manifesto"], ["Product / RIE", "#relationship"],
+  ["Echo → Knowledge", "#echo"], ["RIE Architecture", "#architecture"],
+  ["Evidence", "#epistemics"], ["NMEA Hypothesis", "#hypothesis"],
+  ["Predestination", "#predestination"], ["Roadmap", "#roadmap"],
+  ["RIE Ω", "#omega"], ["Genesis", "#genesis"],
+  ["Specifications", "#specs"], ["Pricing", "#pricing"]
+];
+
 function Tag({ children }) {
   return <span className="tag">{children}</span>;
 }
@@ -126,6 +135,7 @@ function ConvergenceDiagram() {
 
 export default function App() {
   const [tick, setTick] = useState(0);
+  const [navOpen, setNavOpen] = useState(false);
   const telemetry = useMemo(() => [
     "PHYSICAL EVENT / OBSERVED",
     "PGN 128267 / INTERPRETED",
@@ -143,12 +153,21 @@ export default function App() {
     <div className="fixed-grid"/>
     <nav>
       <a className="brand" href="#top"><i/> ADAM-3000</a>
+      <div className="section-nav">
+        <button className="section-nav-button" type="button" aria-expanded={navOpen} aria-controls="section-navigation-menu" onClick={() => setNavOpen(open => !open)}>
+          EXPLORE <ChevronDown size={13}/>
+        </button>
+        <div id="section-navigation-menu" className={`section-nav-menu ${navOpen ? "open" : ""}`}>
+          {navigationSections.map(([label, href]) => <a key={href} href={href} onClick={() => setNavOpen(false)}>{label}</a>)}
+        </div>
+      </div>
       <div className="nav-tags"><Tag>RIE ONLINE</Tag><Tag>Ω OBSERVATORY</Tag></div>
       <a className="nav-link" href="#omega">VIEW THE FIXED POINT</a>
     </nav>
 
     <section id="top" className="hero wide">
       <div className="hero-copy">
+        <div className="adam-expansion hero-adam"><b>A</b>tomically <b>D</b>erived <b>A</b>quatic <b>M</b>ultiverse</div>
         <SectionLabel>FULL-STACK MARINE OBSERVATION / FROM PHYSICS TO PROVENANCE</SectionLabel>
         <h1>REALITY.<br/><em>DECODED.</em></h1>
         <p className="lead">ADAM-3000 is the first reference product powered by the Reality Interpretation Engine. It begins with the most ordinary of marine questions and preserves every transformation required for the answer to mean something.</p>
@@ -194,8 +213,12 @@ export default function App() {
       <div>
         <SectionLabel>PRODUCT / PLATFORM RELATIONSHIP</SectionLabel>
         <h2>ADAM-3000 is the product.<br/><em>RIE is the architecture.</em></h2>
-        <p>ADAM-3000 establishes the trusted boundary with the physical world: isolated marine interface, deterministic acquisition and evidence logging.</p>
-        <p>From that boundary upward, RIE preserves and interprets each transformation from electrical signal to human-readable observation.</p>
+        <div className="adam-definition">
+          <span className="adam-expansion"><b>A</b>tomically <b>D</b>erived <b>A</b>quatic <b>M</b>ultiverse</span>
+          <span>The physical observation platform through which the Reality Interpretation Engine was first uncovered.</span>
+        </div>
+        <p>ADAM-3000 establishes the trusted observational boundary between physical reality and RIE: isolated marine interface, deterministic acquisition and evidence logging.</p>
+        <p>It is not the origin of RIE. It is the instrument through which RIE was first uncovered. From that boundary upward, RIE preserves and interprets each transformation from electrical signal to human-readable observation.</p>
         <blockquote>RIE does not conceptually depend on ADAM-3000. ADAM-3000 depends on RIE. Reality has declined to comment.</blockquote>
       </div>
       <div className="panel platform-flow">
