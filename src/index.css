@@ -78,7 +78,11 @@ section[id]{scroll-margin-top:84px}.section-nav{position:relative;align-self:str
   display: block;
   margin-bottom: 10px;
   color: #fbbf24;
-  font: 9px ui-monospace, supporting-evidence > div {
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .18em;
+}
+
+.supporting-evidence > div {
   display: flex;
   justify-content: space-between;
   gap: 20px;
