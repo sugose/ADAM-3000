@@ -49,7 +49,7 @@ const roadmap = [
     items: ["Evidence-backed hypotheses", "Alternative-model evaluation", "Observation versus prediction", "Software blamed before spacetime"]
   },
   {
-    version: "RIE âˆž", name: "TRANSCEND", tone: "rose",
+    version: "RIE ∞", name: "TRANSCEND", tone: "rose",
     summary: "The final human roadmap phase examines trajectories across possible realities.",
     items: ["Multiverse I/O reservation", "Cross-reality provenance", "Reference-frame negotiation", "Causality conflict handling"]
   },
@@ -174,7 +174,7 @@ export default function App() {
         <div className="tags"><Tag>EVIDENCE-NATIVE</Tag><Tag>PROVENANCE-FIRST</Tag><Tag>REPLAYABLE</Tag><Tag>SPACETIME-AWARE</Tag><Tag>LEGACY NMEA 2000</Tag></div>
       </div>
       <div className="panel reality-interface">
-        <div className="panel-head"><span>LIVE REALITY INTERFACE</span><b>â— OBSERVING</b></div>
+        <div className="panel-head"><span>LIVE REALITY INTERFACE</span><b>&#9679; OBSERVING</b></div>
         <SectionLabel>WATER DEPTH</SectionLabel>
         <div className="depth">3.7 <i>m</i></div>
         <div className="metric-grid">
@@ -346,7 +346,7 @@ export default function App() {
       </div>
       <div className="genesis-principle">
         <small>GENESIS PRINCIPLE</small>
-        <h3>OMEGA â‰  GOD<br/>OMEGA = CREATOR INFRASTRUCTURE</h3>
+        <h3>OMEGA ≠ GOD<br/>OMEGA = CREATOR INFRASTRUCTURE</h3>
         <p>Gods are application-layer concerns. RIE is infrastructure.</p>
       </div>
     </section>
