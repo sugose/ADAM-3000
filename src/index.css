@@ -643,3 +643,57 @@ section[id]{scroll-margin-top:84px}.section-nav{position:relative;align-self:str
     text-align: left;
   }
 }
+/* Publication-level header for RIE research bulletins */
+
+.news-bulletin-header {
+  position: relative;
+  margin: 82px 0 32px;
+  padding: 0 250px 36px 0;
+  border-bottom: 1px solid #a78bfa38;
+}
+
+.news-bulletin-header h2 {
+  margin: 22px 0 0;
+  font-size: clamp(56px, 8vw, 118px);
+  line-height: .88;
+  letter-spacing: -.065em;
+}
+
+.news-bulletin-status {
+  position: absolute;
+  right: 0;
+  bottom: 36px;
+  min-width: 200px;
+  padding: 17px 20px;
+  border: 1px solid #a78bfa42;
+  border-radius: 17px;
+  background: #a78bfa08;
+}
+
+.news-bulletin-status span,
+.news-bulletin-status b {
+  display: block;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .17em;
+}
+
+.news-bulletin-status span {
+  color: #a78bfa;
+}
+
+.news-bulletin-status b {
+  margin-top: 9px;
+  color: #e6edf3;
+}
+
+@media (max-width: 800px) {
+  .news-bulletin-header {
+    padding-right: 0;
+  }
+
+  .news-bulletin-status {
+    position: static;
+    display: inline-block;
+    margin-top: 24px;
+  }
+}

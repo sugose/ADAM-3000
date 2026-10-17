@@ -360,14 +360,19 @@ export default function App() {
             </div>
           </div>
         </details>
-        <div className="news-separator">
-  <span>NEW RESEARCH THREAD</span>
+        <div className="news-bulletin-header">
+  <div className="section-label warm">ADAM-3000 RESEARCH NEWS / NEW RESEARCH THREAD</div>
+  <h2>Research bulletin RIE-0002</h2>
+  <div className="news-bulletin-status">
+    <span>NEW HYPOTHESIS</span>
+    <b>RESEARCH ACTIVE</b>
+  </div>
 </div>
 
 <article className="secondary-bulletin">
   <div className="secondary-bulletin-head">
     <div>
-      <small>RESEARCH BULLETIN RIE-0002</small>
+      <div className="news-kicker">UNIVERSE LENS / REALITY RESIDUAL / MULTIVERSAL PROJECTION</div>
       <h3>The Universe Lens Thickness Hypothesis</h3>
     </div>
 
