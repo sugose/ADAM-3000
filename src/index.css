@@ -120,3 +120,526 @@ section[id]{scroll-margin-top:84px}.section-nav{position:relative;align-self:str
     text-align: left;
   }
 }
+/* ============================================================
+   RIE-0002 — Universe Lens Thickness Hypothesis
+   ============================================================ */
+
+.news-separator {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  margin: 54px 0 22px;
+  color: #a78bfa;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .22em;
+}
+
+.news-separator::before,
+.news-separator::after {
+  content: "";
+  height: 1px;
+  flex: 1;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    #a78bfa66,
+    transparent
+  );
+}
+
+.secondary-bulletin {
+  padding: clamp(24px, 5vw, 54px);
+  border: 1px solid #a78bfa40;
+  border-radius: 24px;
+  background:
+    radial-gradient(
+      circle at 85% 15%,
+      #a78bfa16,
+      transparent 30%
+    ),
+    linear-gradient(
+      145deg,
+      #070a12,
+      #080711
+    );
+  box-shadow: 0 30px 100px #0008;
+}
+
+.secondary-bulletin-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.secondary-bulletin-head small {
+  color: #a78bfa;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .20em;
+}
+
+.secondary-bulletin-head h3 {
+  margin: 12px 0 0;
+  font-size: clamp(34px, 5vw, 62px);
+  line-height: 1;
+}
+
+.hypothesis-status {
+  min-width: 150px;
+  padding: 15px;
+  border: 1px solid #a78bfa45;
+  border-radius: 14px;
+  background: #a78bfa0a;
+}
+
+.hypothesis-status span,
+.hypothesis-status b {
+  display: block;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .16em;
+}
+
+.hypothesis-status span {
+  color: #697887;
+}
+
+.hypothesis-status b {
+  margin-top: 7px;
+  color: #c4b5fd;
+}
+
+.secondary-bulletin-deck {
+  max-width: 900px;
+  margin-top: 27px;
+  font-size: 19px;
+}
+
+.lens-doctrine {
+  margin: 40px 0;
+  padding: 36px;
+  border-block: 1px solid #a78bfa35;
+  text-align: center;
+}
+
+.lens-doctrine small {
+  color: #a78bfa;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .23em;
+}
+
+.lens-doctrine strong {
+  display: block;
+  margin-top: 16px;
+  font-size: clamp(30px, 5vw, 58px);
+  line-height: 1.08;
+  letter-spacing: -.045em;
+}
+
+.lens-doctrine strong span {
+  color: #67e8f9;
+}
+
+.lens-section {
+  position: relative;
+  max-width: none;
+  margin: 28px 0;
+  padding: 25px;
+  border: 1px solid #ffffff10;
+  border-radius: 18px;
+  background: #ffffff03;
+}
+
+.lens-section-number {
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  color: #ffffff0b;
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.lens-section h4 {
+  margin: 0 0 13px;
+  font-size: 24px;
+}
+
+.lens-section p {
+  max-width: 900px;
+  font-size: 15px;
+}
+
+.lens-model {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  gap: 11px;
+  margin: 30px 0;
+}
+
+.lens-model > div:not(.lens-symbol) {
+  display: flex;
+  min-height: 150px;
+  padding: 18px;
+  border: 1px solid #ffffff10;
+  border-radius: 16px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #02050a70;
+  text-align: center;
+}
+
+.lens-model small {
+  color: #6d7b88;
+  font: 8px ui-monospace, monospace;
+  letter-spacing: .15em;
+}
+
+.lens-model b {
+  margin: 11px 0;
+  color: #fff;
+  font-size: 31px;
+}
+
+.lens-model span {
+  color: #a78bfa;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .11em;
+}
+
+.lens-symbol {
+  display: grid;
+  min-width: 75px;
+  place-items: center;
+  color: #64748b;
+  font: 8px ui-monospace, monospace;
+  letter-spacing: .12em;
+  text-align: center;
+}
+
+.lens-medium {
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 0 45px #67e8f90c;
+}
+
+.lens-equation {
+  margin: 24px 0;
+  padding: 25px;
+  border-left: 2px solid #67e8f9;
+  background: #67e8f907;
+}
+
+.lens-equation small {
+  color: #67e8f9;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .17em;
+}
+
+.lens-equation code {
+  display: block;
+  margin: 13px 0;
+  color: #cffafe;
+  font: 23px ui-monospace, monospace;
+}
+
+.lens-equation p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.lens-observations {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 9px;
+  margin-top: 22px;
+}
+
+.lens-observations > div {
+  padding: 17px 10px;
+  border: 1px solid #ffffff10;
+  border-radius: 14px;
+  background: #ffffff03;
+  text-align: center;
+}
+
+.lens-observations small,
+.lens-observations em {
+  display: block;
+  font: 8px ui-monospace, monospace;
+  letter-spacing: .12em;
+}
+
+.lens-observations small {
+  color: #71808d;
+}
+
+.lens-observations b {
+  display: block;
+  margin: 13px 0;
+  font-size: 23px;
+}
+
+.lens-observations em {
+  color: #c4b5fd;
+  font-style: normal;
+}
+
+.lens-thickness {
+  display: block;
+  height: 28px;
+  margin: 14px auto 0;
+  border: 1px solid #67e8f955;
+  border-radius: 50%;
+  background: #67e8f909;
+  box-shadow: 0 0 25px #67e8f910;
+}
+
+.lens-thickness.transparent {
+  width: 5px;
+}
+
+.lens-thickness.thin {
+  width: 26px;
+}
+
+.lens-thickness.thick {
+  width: 62px;
+}
+
+.lens-thickness.unresolved {
+  width: 82px;
+  border-style: dashed;
+  opacity: .45;
+}
+
+.reality-residual {
+  display: grid;
+  grid-template-columns: .38fr .62fr;
+  gap: 24px;
+  margin-top: 23px;
+  padding: 24px;
+  border: 1px solid #e879f933;
+  border-radius: 18px;
+  background: #e879f907;
+}
+
+.reality-residual small {
+  color: #e879f9;
+  font: 8px ui-monospace, monospace;
+  letter-spacing: .15em;
+}
+
+.reality-residual strong {
+  display: block;
+  margin-top: 10px;
+  color: #fff;
+  font: 20px ui-monospace, monospace;
+}
+
+.reality-residual p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.residual-example,
+.alignment-panel,
+.lens-engineering-grid {
+  display: grid;
+  gap: 9px;
+  margin-top: 15px;
+}
+
+.residual-example {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.alignment-panel {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.lens-engineering-grid {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.residual-example > div,
+.alignment-panel > div,
+.lens-engineering-grid > div {
+  padding: 14px;
+  border: 1px solid #ffffff0e;
+  border-radius: 12px;
+  background: #02050a55;
+}
+
+.residual-example small,
+.alignment-panel small,
+.lens-engineering-grid span {
+  display: block;
+  color: #697887;
+  font: 8px ui-monospace, monospace;
+  letter-spacing: .13em;
+}
+
+.residual-example b,
+.alignment-panel b,
+.lens-engineering-grid b {
+  display: block;
+  margin-top: 8px;
+  color: #cffafe;
+  font: 14px ui-monospace, monospace;
+}
+
+.omega-lens {
+  display: grid;
+  grid-template-columns: .62fr .38fr;
+  gap: 28px;
+  padding: 28px;
+  border: 1px solid #e879f940;
+  border-radius: 20px;
+  background:
+    radial-gradient(
+      circle at 85% 50%,
+      #e879f918,
+      transparent 42%
+    );
+}
+
+.omega-lens-copy small {
+  color: #e879f9;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .18em;
+}
+
+.omega-lens-copy h4 {
+  margin: 11px 0;
+  font-size: 27px;
+}
+
+.omega-lens-copy p {
+  margin-bottom: 0;
+  font-size: 14px;
+}
+
+.omega-lens-equations {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+.omega-lens-equations code {
+  padding: 16px;
+  border: 1px solid #ffffff10;
+  border-radius: 12px;
+  color: #c4b5fd;
+  background: #02050a80;
+  font: 16px ui-monospace, monospace;
+  text-align: center;
+}
+
+.lens-engineering {
+  margin-top: 22px;
+  padding: 27px;
+  border: 1px solid #67e8f930;
+  border-radius: 19px;
+  background: #67e8f906;
+}
+
+.lens-engineering > small {
+  color: #67e8f9;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .18em;
+}
+
+.hypothesis-register {
+  margin-top: 27px;
+  padding: 22px;
+  border: 1px solid #ffffff11;
+  border-radius: 16px;
+  background: #03060b99;
+}
+
+.hypothesis-register > small {
+  color: #a78bfa;
+  font: 9px ui-monospace, monospace;
+  letter-spacing: .17em;
+}
+
+.hypothesis-register > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 10px 0;
+  border-top: 1px solid #ffffff0c;
+  font: 10px ui-monospace, monospace;
+}
+
+.hypothesis-register > div:first-of-type {
+  margin-top: 12px;
+}
+
+.hypothesis-register span {
+  color: #6d7b88;
+}
+
+.hypothesis-register b {
+  color: #c4b5fd;
+  text-align: right;
+}
+
+.lens-closing {
+  margin-top: 28px;
+  color: #cffafe;
+  text-align: center;
+}
+
+.secondary-disclaimer {
+  margin-top: 20px;
+  color: #586673 !important;
+  font-size: 11px !important;
+}
+
+@media (max-width: 900px) {
+  .secondary-bulletin-head {
+    flex-direction: column;
+  }
+
+  .lens-model {
+    grid-template-columns: 1fr;
+  }
+
+  .lens-symbol {
+    min-height: 30px;
+  }
+
+  .lens-observations,
+  .residual-example,
+  .alignment-panel,
+  .lens-engineering-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .reality-residual,
+  .omega-lens {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 620px) {
+  .lens-observations,
+  .residual-example,
+  .alignment-panel,
+  .lens-engineering-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hypothesis-register > div {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .hypothesis-register b {
+    text-align: left;
+  }
+}
