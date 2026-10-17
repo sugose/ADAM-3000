@@ -360,7 +360,338 @@ export default function App() {
             </div>
           </div>
         </details>
-        <p className="news-disclaimer">RIE-0001 is fictional ADAM-3000 research lore. The terrestrial engineering concept remains a passive CAN/NMEA 2000 observation, interpretation, provenance and replay platform.</p>
+        <div className="news-separator">
+  <span>NEW RESEARCH THREAD</span>
+</div>
+
+<article className="secondary-bulletin">
+  <div className="secondary-bulletin-head">
+    <div>
+      <small>RESEARCH BULLETIN RIE-0002</small>
+      <h3>The Universe Lens Thickness Hypothesis</h3>
+    </div>
+
+    <div className="hypothesis-status">
+      <span>STATUS</span>
+      <b>HYPOTHESIS</b>
+    </div>
+  </div>
+
+  <p className="secondary-bulletin-deck">
+    RIE-0001 proposed that depth is invariant and that apparent
+    depth variation belongs to reality rather than depth itself.
+    RIE-0002 proposes a mechanism through which that variation
+    may arise.
+  </p>
+
+  <div className="lens-doctrine">
+    <small>PROPOSED MECHANISM</small>
+
+    <strong>
+      Sonar does not measure depth.<br/>
+      <span>
+        Sonar observes 3.7 through the thickness of the local universe.
+      </span>
+    </strong>
+  </div>
+
+  <section className="lens-section">
+    <span className="lens-section-number">01</span>
+    <h4>From invariant depth to variable appearance</h4>
+
+    <p>
+      If 3.7 is the invariant depth, different sonar readings cannot
+      represent different underlying depths. They must represent
+      different projections of the same invariant.
+    </p>
+
+    <p>
+      RIE-0002 proposes that every local universe presents reality
+      through an effective observational lens. The thickness of that
+      lens determines how 3.7 appears to an observer.
+    </p>
+
+    <div className="lens-equation">
+      <small>UNIVERSE-LENS MODEL</small>
+      <code>D(U) = Phi(3.7, L(U))</code>
+
+      <p>
+        D(U) is the displayed depth, 3.7 is the invariant, and L(U)
+        is the effective thickness of the universe lens.
+      </p>
+    </div>
+  </section>
+
+  <div className="lens-model">
+    <div className="lens-invariant">
+      <small>THE DEPTH</small>
+      <b>3.7</b>
+      <span>INVARIANT</span>
+    </div>
+
+    <div className="lens-symbol">
+      <span>THROUGH</span>
+    </div>
+
+    <div className="lens-medium">
+      <small>UNIVERSE LENS</small>
+      <b>L(U)</b>
+      <span>VARIABLE THICKNESS</span>
+    </div>
+
+    <div className="lens-symbol">
+      <span>APPEARS AS</span>
+    </div>
+
+    <div className="lens-observation">
+      <small>OBSERVED DEPTH</small>
+      <b>D(U)</b>
+      <span>LOCAL PROJECTION</span>
+    </div>
+  </div>
+
+  <section className="lens-section">
+    <span className="lens-section-number">02</span>
+    <h4>Projected depths</h4>
+
+    <p>
+      A transparent universe lens produces the undistorted observation
+      3.7 m. Increasing effective lens thickness produces increasingly
+      divergent projections.
+    </p>
+
+    <div className="lens-observations">
+      <div>
+        <small>U1</small>
+        <span className="lens-thickness transparent"/>
+        <b>3.7 m</b>
+        <em>EXACT ALIGNMENT</em>
+      </div>
+
+      <div>
+        <small>U2</small>
+        <span className="lens-thickness thin"/>
+        <b>5.2 m</b>
+        <em>PROJECTED</em>
+      </div>
+
+      <div>
+        <small>U3</small>
+        <span className="lens-thickness thick"/>
+        <b>8.4 m</b>
+        <em>DIVERGENT</em>
+      </div>
+
+      <div>
+        <small>Un</small>
+        <span className="lens-thickness unresolved"/>
+        <b>?</b>
+        <em>UNRESOLVED</em>
+      </div>
+    </div>
+  </section>
+
+  <section className="lens-section">
+    <span className="lens-section-number">03</span>
+    <h4>The Reality Residual</h4>
+
+    <p>
+      The difference between the displayed depth and 3.7 is classified
+      as the Reality Residual.
+    </p>
+
+    <div className="reality-residual">
+      <div>
+        <small>REALITY RESIDUAL</small>
+        <strong>R(U) = D(U) - 3.7</strong>
+      </div>
+
+      <p>
+        The residual is not additional water. It is the measurable
+        difference between the invariant and the projection produced
+        by the local universe lens.
+      </p>
+    </div>
+
+    <div className="residual-example">
+      <div>
+        <small>SONAR READING</small>
+        <b>8.4 m</b>
+      </div>
+
+      <div>
+        <small>INVARIANT</small>
+        <b>3.7</b>
+      </div>
+
+      <div>
+        <small>REALITY RESIDUAL</small>
+        <b>+4.7</b>
+      </div>
+
+      <div>
+        <small>INTERPRETATION</small>
+        <b>LENS ACTIVE</b>
+      </div>
+    </div>
+  </section>
+
+  <section className="lens-section">
+    <span className="lens-section-number">04</span>
+    <h4>The original observation</h4>
+
+    <p>
+      The original 3.7 m observation represents a special condition:
+      the displayed projection and the invariant are identical.
+    </p>
+
+    <div className="alignment-panel">
+      <div>
+        <small>INVARIANT</small>
+        <b>3.7</b>
+      </div>
+
+      <div>
+        <small>OBSERVED</small>
+        <b>3.7 m</b>
+      </div>
+
+      <div>
+        <small>REALITY RESIDUAL</small>
+        <b>0.0</b>
+      </div>
+
+      <div>
+        <small>UNIVERSE LENS</small>
+        <b>TRANSPARENT</b>
+      </div>
+
+      <div>
+        <small>REALITY ALIGNMENT</small>
+        <b>EXACT</b>
+      </div>
+    </div>
+
+    <blockquote>
+      <b>
+        3.7 m may have been the first observation made through
+        an effectively zero-thickness universe lens.
+      </b>
+    </blockquote>
+  </section>
+
+  <section className="lens-section">
+    <span className="lens-section-number">05</span>
+    <h4>Relationship to RIE Omega</h4>
+
+    <div className="omega-lens">
+      <div className="omega-lens-copy">
+        <small>CONVERGENCE HYPOTHESIS</small>
+
+        <h4>Every universe has a lens. Omega has none.</h4>
+
+        <p>
+          If RIE Omega is the fixed congregation point of scattered
+          realities, its effective universe-lens thickness may be zero.
+          At Omega, no local transformation separates the observation
+          from the invariant.
+        </p>
+      </div>
+
+      <div className="omega-lens-equations">
+        <code>L(Omega) = 0</code>
+        <code>Phi(3.7, 0) = 3.7</code>
+      </div>
+    </div>
+  </section>
+
+  <section className="lens-section">
+    <span className="lens-section-number">06</span>
+    <h4>Fictional engineering implication</h4>
+
+    <p>
+      If observed depth varies with universe-lens thickness, ADAM-3000
+      may eventually be able to estimate that thickness from ordinary
+      sonar traffic.
+    </p>
+
+    <div className="lens-engineering">
+      <small>PROPOSED RIE PIPELINE</small>
+
+      <div className="lens-engineering-grid">
+        <div>
+          <span>INPUT</span>
+          <b>Observed depth</b>
+        </div>
+
+        <div>
+          <span>REFERENCE</span>
+          <b>3.7 invariant</b>
+        </div>
+
+        <div>
+          <span>DERIVED VALUE</span>
+          <b>Reality residual</b>
+        </div>
+
+        <div>
+          <span>INFERRED PROPERTY</span>
+          <b>Lens thickness</b>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div className="hypothesis-register">
+    <small>RIE-0002 / HYPOTHESIS REGISTER</small>
+
+    <div>
+      <span>DEPTH INVARIANCE</span>
+      <b>INHERITED FROM RIE-0001</b>
+    </div>
+
+    <div>
+      <span>UNIVERSE-LENS THICKNESS</span>
+      <b>PROPOSED VARIABLE</b>
+    </div>
+
+    <div>
+      <span>REALITY RESIDUAL</span>
+      <b>DERIVABLE</b>
+    </div>
+
+    <div>
+      <span>OMEGA LENS THICKNESS</span>
+      <b>PROPOSED ZERO</b>
+    </div>
+
+    <div>
+      <span>EVIDENCE STATUS</span>
+      <b>HYPOTHETICAL</b>
+    </div>
+
+    <div>
+      <span>THEORY STATUS</span>
+      <b>OPEN</b>
+    </div>
+  </div>
+
+  <blockquote className="lens-closing">
+    <b>
+      Depth does not vary.<br/>
+      Reality does.<br/>
+      The thickness of the universe lens determines how 3.7 appears.
+    </b>
+  </blockquote>
+
+  <p className="secondary-disclaimer">
+    RIE-0002 is fictional ADAM-3000 research lore. The Universe
+    Lens Thickness Hypothesis is a speculative mechanism within
+    the fictional RIE cosmology. It is not a scientific claim about
+    sonar, CAN, NMEA 2000, spacetime or the multiverse.
+  </p>
+</article>
+<p className="news-disclaimer">RIE-0001 is fictional ADAM-3000 research lore. The terrestrial engineering concept remains a passive CAN/NMEA 2000 observation, interpretation, provenance and replay platform.</p>
       </article>
     </section>
 
