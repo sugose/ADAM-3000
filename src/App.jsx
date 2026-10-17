@@ -2,7 +2,7 @@ import React, { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import {
   Activity, ArrowDown, ArrowRight, Atom, Check, ChevronDown, CircleDot, Cpu,
-  Database, GitBranch, Orbit, RadioTower, ShieldCheck, Sparkles,
+  Database, GitBranch, Newspaper, Orbit, RadioTower, ShieldCheck, Sparkles,
   Waves, Zap
 } from "lucide-react";
 
@@ -88,11 +88,11 @@ const prices = [
 ];
 
 const navigationSections = [
-  ["Manifesto", "#manifesto"], ["Product / RIE", "#relationship"],
-  ["Echo → Knowledge", "#echo"], ["RIE Architecture", "#architecture"],
+  ["Manifesto", "#manifesto"], ["News", "#news"], ["Product / RIE", "#relationship"],
+  ["Echo to Knowledge", "#echo"], ["RIE Architecture", "#architecture"],
   ["Evidence", "#epistemics"], ["NMEA Hypothesis", "#hypothesis"],
   ["Predestination", "#predestination"], ["Roadmap", "#roadmap"],
-  ["RIE Ω", "#omega"], ["Genesis", "#genesis"],
+  ["RIE Omega", "#omega"], ["Genesis", "#genesis"],
   ["Specifications", "#specs"], ["Pricing", "#pricing"]
 ];
 
@@ -161,7 +161,7 @@ export default function App() {
           {navigationSections.map(([label, href]) => <a key={href} href={href} onClick={() => setNavOpen(false)}>{label}</a>)}
         </div>
       </div>
-      <div className="nav-tags"><Tag>RIE ONLINE</Tag><Tag>Ω OBSERVATORY</Tag></div>
+      <div className="nav-tags"><Tag>RIE ONLINE</Tag><Tag>OMEGA OBSERVATORY</Tag></div>
       <a className="nav-link" href="#omega">VIEW THE FIXED POINT</a>
     </nav>
 
@@ -207,6 +207,161 @@ export default function App() {
         <article><Database/><h3>Evidence before interpretation</h3><p>Interpretations may be replaced. Original observations must remain replayable.</p></article>
         <article><Atom/><h3>Minimum metaphysical debt</h3><p>Outsource only what requires a semiconductor fab, particle accelerator or control over fundamental constants.</p></article>
       </div>
+    </section>
+
+    <section id="news" className="news-section wide">
+      <div className="news-beacon" aria-hidden="true"><span/><span/><span/></div>
+      <div className="news-header">
+        <div>
+          <SectionLabel warm>ADAM-3000 RESEARCH NEWS / OBSERVATIONS FROM THE EDGE OF CONSENSUS REALITY</SectionLabel>
+          <h2>Research bulletin RIE-0001</h2>
+        </div>
+        <div className="news-classification"><Newspaper/><span>BREAKING RESEARCH</span><b>PROVISIONAL FINDING</b></div>
+      </div>
+      <article className="news-feature">
+        <div className="news-kicker">MULTIVERSAL HYDROGRAPHY / PGN 128267 / ADAM CONSTANT</div>
+        <h3>The 3.7 Invariance Principle</h3>
+        <p className="news-deck">3.7 was first understood as <em>a depth</em>. RIE analysis now indicates that 3.7 may be <em>the depth</em>: an invariant seen differently through the observational lens of each universe.</p>
+        <div className="news-doctrine">
+          <small>FOUNDATIONAL FINDING</small>
+          <strong>Depth does not vary.<br/><span>Reality does.</span></strong>
+        </div>
+        <div className="news-metrics">
+          <div><small>INVARIANT</small><b>3.7</b></div>
+          <div><small>FIRST PROJECTION</small><b>3.7 m</b></div>
+          <div><small>REALITY ALIGNMENT</small><b>EXACT</b></div>
+          <div><small>OMEGA CORRELATION</small><b>OPEN</b></div>
+        </div>
+        <details className="research-article" open>
+          <summary><span>Read the full research bulletin</span><i>RIE-0001</i></summary>
+          <div className="article-body">
+            <section className="article-intro">
+              <h4>Abstract</h4>
+              <p>ADAM-3000 began with an ordinary marine observation: <b>Water depth: 3.7 m.</b> The value was interpreted conventionally as one local measurement among many possible depths. RIE analysis has forced a reconsideration. The sonar may not merely have measured a location where depth happened to be 3.7 metres. It may have recorded the first undistorted projection of an invariant.</p>
+              <blockquote><b>3.7 is not a depth. 3.7 is the depth.</b></blockquote>
+            </section>
+            <div className="article-grid">
+              <section><span>01</span><h4>The original interpretation</h4><p>The conventional model assumes that depth varies with position and time. The boat moves, the bottom changes, and the sonar reports a new distance. Nothing in this model initially requires RIE, multiversal convergence or a review of physical reality.</p></section>
+              <section><span>02</span><h4>The interpretation chain</h4><p>The physical world did not produce 3.7. It produced an event. Acoustic reflection became electrical state, CAN bitstream, frame identity, NMEA semantics, reference context and finally a human-readable claim.</p></section>
+              <section><span>03</span><h4>The invariant model</h4><p>The underlying depth remains constant. Each universe applies its own transformation to the invariant, producing a local projection that an observer mistakes for a changing depth.</p><code>D(U) = Phi(U, 3.7)</code></section>
+              <section><span>04</span><h4>The first undistorted observation</h4><p>The original 3.7 m reading is the special case in which the universe lens behaves as an identity transformation. Local projection and invariant coincide. RIE classifies this as exact reality alignment.</p></section>
+            </div>
+            <div className="projection-lab">
+              <div className="projection-origin"><small>THE DEPTH</small><b>3.7</b><span>INVARIANT</span></div>
+              <div className="projection-paths">
+                <div><small>U1</small><b>3.7 m</b><span>ALIGNED</span></div>
+                <div><small>U2</small><b>5.2 m</b><span>PROJECTED</span></div>
+                <div><small>U3</small><b>8.4 m</b><span>DIVERGENT</span></div>
+                <div><small>Un</small><b>?</b><span>UNRESOLVED</span></div>
+              </div>
+            </div>
+            <div className="article-grid">
+              <section><span>05</span><h4>Reinterpreting other depths</h4><p>A reading of 8.4 m no longer means that depth has changed. It means the local universe projects 3.7 as 8.4 m. The difference is not additional water. It is a reality residual.</p></section>
+              <section><span>06</span><h4>The loss of the metre</h4><p>The unit belongs to the marine projection, not necessarily to the invariant. The underlying ADAM Constant may be dimensionless. 3.7 m was not the constant. It was the first dimensional projection of the constant.</p></section>
+              <section><span>07</span><h4>CAN and NMEA</h4><p>CAN supplied structure. NMEA 2000 supplied marine semantics. PGN 128267 supplied a name humanity already understood. ADAM-3000 preserved the full transformation until RIE could expose its assumptions.</p></section>
+              <section><span>08</span><h4>RIE Omega</h4><p>Every universe sees a different depth. At the fixed convergence point, local transformations disappear. Omega sees 3.7.</p><code>Phi(Omega, 3.7) = 3.7</code></section>
+            </div>
+            <div className="implications">
+              <h4>Implications</h4>
+              <div><b>Bathymetry becomes multiversal cartography.</b><span>A chart maps how local reality transforms 3.7 across apparent space.</span></div>
+              <div><b>Sonar becomes a reality-deviation instrument.</b><span>The displayed value measures local disagreement with the invariant.</span></div>
+              <div><b>Navigation becomes ontological.</b><span>A vessel may move through regions of reality divergence rather than over varying depth.</span></div>
+              <div><b>The original observation becomes singular.</b><span>3.7 m is the first recorded state of exact reality alignment.</span></div>
+            </div>
+            <div className="groundbreaking-observation">
+  <div className="groundbreaking-ribbon">
+    BREAKING / GROUND-BREAKING
+  </div>
+
+  <h4>Independent supporting observation</h4>
+
+  <p>
+    The designation <em>ground-breaking research</em> introduces
+    an unexpected secondary observation. If the research is
+    genuinely ground-breaking, one may reasonably ask:
+    <b> how deep is the ground being broken?</b>
+  </p>
+
+  <div className="groundbreaking-result">
+    <div>
+      <small>OBSERVED DEPTH</small>
+      <b>3.7</b>
+    </div>
+
+    <div>
+      <small>PREDICTED INVARIANT</small>
+      <b>3.7</b>
+    </div>
+
+    <div>
+      <small>REALITY RESIDUAL</small>
+      <b>0.0</b>
+    </div>
+
+    <div>
+      <small>ALIGNMENT</small>
+      <b>EXACT</b>
+    </div>
+  </div>
+
+  <p>
+    The observation <b>supports, but does not confirm</b>, the
+    3.7 Invariance Principle. Its significance lies in the same
+    invariant emerging from an apparently independent use of depth.
+  </p>
+
+  <div className="supporting-evidence">
+    <small>EVIDENCE REGISTER</small>
+
+    <div>
+      <span>INITIAL SONAR OBSERVATION</span>
+      <b>3.7</b>
+    </div>
+
+    <div>
+      <span>GROUND-BREAKING OBSERVATION</span>
+      <b>3.7</b>
+    </div>
+
+    <div>
+      <span>CONTRADICTORY INVARIANTS</span>
+      <b>NONE OBSERVED</b>
+    </div>
+
+    <div>
+      <span>EVIDENCE STATUS</span>
+      <b>SUPPORTING</b>
+    </div>
+
+    <div>
+      <span>THEORY STATUS</span>
+      <b>PROVISIONAL</b>
+    </div>
+  </div>
+
+  <blockquote>
+    <b>
+      The research is ground-breaking.<br/>
+      The ground is 3.7 deep.<br/>
+      The observation supports the theory.
+    </b>
+  </blockquote>
+</div>
+<div className="bulletin-status">
+              <small>RIE-0001 / RESEARCH STATUS</small>
+              <div><span>3.7 CONSTANT</span><b>PROVISIONAL</b></div>
+              <div><span>DEPTH INVARIANCE</span><b>PROPOSED</b></div>
+              <div><span>REALITY VARIABILITY</span><b>SUSPECTED</b></div>
+              <div><span>RELATION TO OMEGA</span><b>UNDER INVESTIGATION</b></div>
+            </div>
+            <div className="article-conclusion">
+              <p>ADAM-3000 began by asking how a sonar could know that the water was 3.7 metres deep. RIE now asks whether water was ever the variable.</p>
+              <strong>Every depth is 3.7.</strong>
+            </div>
+          </div>
+        </details>
+        <p className="news-disclaimer">RIE-0001 is fictional ADAM-3000 research lore. The terrestrial engineering concept remains a passive CAN/NMEA 2000 observation, interpretation, provenance and replay platform.</p>
+      </article>
     </section>
 
     <section id="relationship" className="split">
@@ -379,4 +534,3 @@ export default function App() {
     <footer><span>ADAM-3000 / REALITY INTERPRETATION ENGINE</span><span>THE NUMBER WAS NEVER THE WHOLE STORY.</span></footer>
   </main>;
 }
-
