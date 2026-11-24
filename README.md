@@ -1,6 +1,9 @@
 # ADAM-3000
 Reality. Decoded.
 
+This project was developed with the assistance of AI (Gemini, by Google);
+the extent varies by contribution.
+
 ## Local run
 ```bash
 npm install
